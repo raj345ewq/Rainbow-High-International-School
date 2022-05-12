@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Login Page </title>
+    <style>
+        footer {
+            font-family: Verdana, sans-serif;
+        }
+
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: whitesmoke;
+            margin: 0%;
+        }
+
+        button {
+            background-color: black;
+            width: 100%;
+            color: orange;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+
+        .container {
+            padding: 25px;
+            background-color: lightblue;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgb(67, 152, 255);
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function validateForm() {
+            var x = document.forms["myForm"]["username"].value;
+            var y = document.forms["myForm"]["password"].value;
+            if (x == null || x == "") {
+                alert("Username must be filled out");
+                return false;
+            }
+
+            else if (y == null || y == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+
+            //  else{
+            //        alert("Login Successful");
+            // }
+
+
+
+        }
+        function clean_up() {
+            document.forms["myForm"]["username"].value = "";
+            document.forms["myForm"]["password"].value = "";
+        }
+
+
+    </script>
+</head>
+
+<body style="background-image: url(loginbg.png); background-size: cover;">
+    <header style="background-color: black; display: flex;">
+        <div style="width: 20%; background-color: black;">
+            <img src="https://drive.google.com/thumbnail?id=1BJwudx6KP1BQTDtmutU8p3nJLfOYky5Y"
+                style="height: 200px; width: 200px;">
+        </div>
+        <nav style="font-family: Arial, sans-serif; width: 80%; text-align: right;">
+            <br><br><br><br><br><br><br><br><br>
+            <ul>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="yamifood/index.html">Food On Desk</a></li>
+                <li><a href="faculty.html">Faculties</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+    <center>
+        <h1> Student Login Form </h1>
+    </center>
+    <center>
+        <form action="login.php" method="post" name="myForm" onsubmit="return validateForm()">
+            <!-- <form action ="login.php" method="post" name="myForm" > -->
+            <div style="width: 10cm;" class="container">
+                <label>Username : </label>
+                <input type="text" placeholder="Enter Username" name="username">
+                <label>Password : </label>
+                <input type="password" placeholder="Enter Password" name="password" id="pass">
+                <button style="font-size: 15px;" type="submit">Login</button>
+
+                <!-- <input type="checkbox" checked="checked"> Remember me -->
+                <br>
+                <button type="button" class="cancelbtn" name="cancel" onclick="clean_up()"> Cancel</button>
+            </div>
+    </center>
+    </form>
+    <br>
+    <footer style="background-color: rgb(0, 0, 204); text-align: center; bottom: 0; ">
+        <a href="#" class="fa fa-facebook fa-2x"></a>
+        <a href="#" class="fa fa-twitter fa-2x"></a>
+        <a href="#" class="fa fa-google fa-2x"></a>
+        <a href="#" class="fa fa-linkedin fa-2x"></a>
+        <a href="#" class="fa fa-youtube fa-2x"></a>
+        <a href="#" class="fa fa-instagram fa-2x"></a>
+        <p style="color: yellow;">
+            Copyright - All rights are reserved
+            <br>
+            <br>
+        </p>
+    </footer>
+
+</body>
+
+</html>

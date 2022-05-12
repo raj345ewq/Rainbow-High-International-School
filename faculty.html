@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <title>Faculty</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+         
+body{
+  
+  margin-bottom: 50px; 
+  background-color: #ADD8E6;
+  font-family: 'Arimo', sans-serif;
+  margin: 0;
+}
+h3{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+h5{
+  color:#000;
+  text-align:center;
+  font-size: 1em;
+}
+
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+
+* {
+    box-sizing: border-box
+  }
+
+.panels{
+  background: white;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:1250px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:120px;  
+}
+.panel{
+  background-color: #eeebebf1;
+  background-image: url("upload/tab-bg.png"); 
+  background-position: right top; 
+  display:none;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  
+  font-size:1.5em;
+  font-weight:bold
+}
+
+h1 {
+    margin: 1em 0 0.5em 0;
+    font-weight: normal;
+    position: relative;
+    text-shadow: 0 -1px rgba(0,0,0,0.6);
+    font-size: 28px;
+    line-height: 40px;
+    background: rgba(116, 116, 219, 0.788);
+    border: 1px solid black;
+    padding: 15px 15px;
+    color: black;
+    border-radius: 0 10px 0 10px;
+    box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
+    font-family: 'Muli', sans-serif;
+}
+
+h3 {
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-size: 22px;
+    line-height: 40px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(53,86,129, 0.3);
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel,
+#six:checked ~ .panels #six-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab,
+#six:checked ~ .tabs #six-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+
+        </style>
+    </head>
+    <body >
+        <header style="background-color: black; display: flex;">
+            <div style="width: 20%; background-color: black;">
+                <img src="logorhis.png"
+                    style="height: 200px; width: 200px;">
+            </div>
+            <nav style="font-family: Arial, sans-serif; width: 80%; text-align: right;">
+                <br><br><br><br><br><br><br><br><br>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Contactus.html">Contact Us</a></li>
+                    <li><a href="yamifood/index.html">Food On Desk</a></li>
+                    <li><a href="faculty.html">Faculties</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                </ul>
+            </nav>
+            <br>
+        </header>
+      <center>
+        <h1>THE RAINBOW FAMILY</h1>
+        <br>
+        <IMG src="http://www.billabonghighschoolnoida.com/wp-content/uploads/2019/08/Staff-Group-pic.jpg" width="1000" height="600"></IMG>
+    </center>
+        <br>
+        <h3>Principal:<br>Mrs. Baniya Agarwal</h3>
+    
+        <div class="wrapper">
+          <input class="radio" id="one" name="group" type="radio" checked>
+          <input class="radio" id="two" name="group" type="radio">
+          <input class="radio" id="three" name="group" type="radio">
+          <input class="radio" id="four" name="group" type="radio">
+          <input class="radio" id="five" name="group" type="radio">
+          <input class="radio" id="six" name="group" type="radio">
+          <div class="tabs">
+          <label class="tab" id="one-tab" for="one">Pre-Primary Teachers</label>
+          <label class="tab" id="two-tab" for="two">Primary Teachers</label>
+          <label class="tab" id="three-tab" for="three">Middle School Teachers</label>
+          <label class="tab" id="four-tab" for="four">Secondary Teachers</label>
+          <label class="tab" id="five-tab" for="five">Senior Secondary Teachers</label>
+          <label class="tab" id="six-tab" for="six">Office Staff</label>
+            </div>
+            <br>
+            
+          <div class="panels">
+          <div class="panel"  id="one-panel">
+            <div class="panel-title" style=" color: #000; border:1p dashed #000; text-align:center;">Pre Primary Coordinator: <strong><br>Mrs. Bhavna Singh</strong></div>
+            <br><br>
+            <table class="mytable">
+              <tbody>
+              
+
+              <tr>
+              <td style="width:53%;">
+              <ul>
+                
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Taniya Nagi Babra </li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Jaya Ghatak</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Nisha Mahato</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Rajani Kaur</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Neetu Pandey</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Anita Sharma</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Archana Mehta</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Ms. Mandeep Kaur</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Catherine Joseph</li>
+              <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Shilpi Chakraborty</li>
+             
+              </ul>
+              </td>
+              <td>
+              <ul>
+              <li  style="float: none; list-style-type: disc;">&nbsp;Ms. A. Lalitha</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Ms. Simarjeet Kaur</li>                                      
+              <li style="float: none; list-style-type: disc;">&nbsp;Mrs. Vanessa A. Francis</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Mrs. Alisha Anthony</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Mrs. Ravinder Kaur</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Mrs. Ravinder Kaur</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Ms. Rumi Rajak</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Mrs. Duli Mardi</li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Ms. Debanjali Chatterjee </li>
+              <li style="float: none; list-style-type: disc;">&nbsp;Mrs. Priyanka Andreya Ghosh (Montessori Teacher)</li>
+              </ul> 
+              </td>
+              </tr>
+              </tbody>
+              </table>
+      
+          </div>
+          <div class="panel" id="two-panel">
+            <div class="panel-title" style=" color: #000; border:1p dashed #000; text-align:center;">Primary School Coordinator: <strong><br>Mrs. Dipika Kakkar</strong></div>
+            <br><br>
+            <table class="mytable">
+              <tbody>
+                                    
+
+                <tr>
+                <td style="width:55%;">
+                <ul>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Parmila Singh</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mr. Sushanta Kr. Ghoshal (Music)</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. A Sita</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Shalini Sharan</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Sreeparna Goswami</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Abida Khatoon</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Mamta Choudhary</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Sylvia Rosy Stephen</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Rashmi Kumari</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Nisha Nilesh Rangooni</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. G Kavita</li>
+              
+
+
+                </ul>
+                </td>
+                <td>
+                <ul>
+                <li style="float: none; list-style-type: disc;">&nbsp; Ms. Dilraj Kaur</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Balwinder Kaur</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Ms. Nidhi kumari</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Mandeep Kaur Dhanjal</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Maninder Kaur</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Pinki Kumari</li>
+                <li style="float: none; list-style-type: disc;">&nbsp;&nbsp;Mrs. Shyamashree Chakraborty  (Jr. Librarian)</li>
+                <li style="float: none; list-style-type: disc;">&nbsp;&nbsp;Ms. Sudipta Dutta</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Ms. Queeny Harriet Thomas</li>
+                <li style="float: none; list-style-type: disc;">&nbsp; Mr.  Mitendra Nath Gorai</li>
+                
+                </ul>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+      
+          </div>
+          <div class="panel" id="three-panel">
+            <div class="panel-title" style=" color: #000; border:1p dashed #000; text-align:center;">Middle School Coordinator: <strong><br>Mrs. Ranjana Sharma</strong></div>
+            <br><br>
+            <table class="mytable">
+              <tbody>
+                                    
+
+                <tr>
+                <td style="width:68%;">
+                  <ul>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Ms. Amarjeet Kaur</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Sheeba Varghese</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Neelam Singh</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mr. Pinku Seth (Art)</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Sabita Kumari</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mr. Rakesh Kumar Singh</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Seema Bhowmick</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Tania Chatterjee</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Sony</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Ritu</li>
+                  
+                    </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Bindu Kumari Prasad</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Alice B Massie</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Heena Kaur</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Aditi Pradhan</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Madhumita Jha</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mr. Sanjay Tripathi</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Tahira Khatoon</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Vijaya Kumari</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Ms. Madhura Das Biswas</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp;&nbsp;Ms. Isha Vatsa</li>
+                   
+                    </ul>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+      
+          </div>
+
+          <div class="panel" id="four-panel">
+            <div class="panel-title" style=" color: #000; border:1p dashed #000; text-align:center;">Secondary School Coordinator: <strong><br>Ms. Elena Maxwell</strong></div>
+            <br><br>
+            <table class="mytable">
+              <tbody>
+                                    
+
+                <tr>
+                <td style="width:65%;">
+                  <ul>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Manshi Sharma (P.T)</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Mukta Verma</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mr. Rizwan Khan</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Vimala Agarwal</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Ms. Tanuja Sen</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. MVT Brahmaramba</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Arwinder Kaur</li>
+                    
+                </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Artee Singh</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Nitu Singh (Sr. Librarian)</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Harpreet Kaur</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mr. Samir Kumar Hore</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mr. Radhe Shyam Singh (P.T.)</li> 
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. Anamitra Mukherjee</li>
+                    <li style="float: none; list-style-type: disc;">&nbsp; Mrs. M. K. Usha</li>
+                      
+                    </ul>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+      
+          </div>
+          <div class="panel" id="five-panel">
+            <div class="panel-title" style=" color: #000; border:1p dashed #000; text-align:center;">Senior Secondary Coordinator:<strong><br>Mr. Shoaib Khan</strong></div>
+            <br><br>
+            <table class="mytable">
+              <tbody>
+                                    
+
+                <tr>
+                <td style="width: 55%;">
+                  <ul>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. S Hemalatha (HOD, Commerce)</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mr. Sadhan Kumar Patra (HOD, Maths)</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. Uma Tiwary(HOD, Economics)</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. Jaswinder Kaur(HOD, Hindi)</li>
+                    
+                    
+                    
+                </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mr. Ram Ratan Dubey (HOD, Physics)</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. Geetha Sunil (HOD, Computer Science)</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mr. Kishore Kumar Sinha (HOD, Chemistry) </li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. Neelam Singh (HOD, Biology)</li>
+
+                      
+                    </ul>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+      
+          </div>
+          <div class="panel" id="six-panel">
+            <div class="panel-title" style=" color: #000; border:1p dashed #000; text-align:center;">Office Staff Coordinator:<strong><br>Mrs. Aarti Saxena</strong></div>
+            <br><br>
+            <table class="mytable">
+              <tbody>
+                                    
+
+                <tr>
+                <td style="width: 70%;">
+                  <ul>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. Shipra Khandai</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mr. Pranav Ranjan Chatterjee (IT Facilitator)</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mr. Lalit Khalkho </li>
+                   
+                   
+                  
+                    
+                </ul>
+                </td>
+                <td>
+                  <ul>
+                                        
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mrs. Manjula Kannan</li>
+                    <li  style="float: none; list-style-type: disc;">&nbsp; Mr. Prashant Khalkho</li>
+                      
+                    </ul>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+      
+          </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <footer style="background-color: rgb(0, 0, 204); text-align: center; bottom: 0; ">
+          <a href="#" class="fa fa-facebook fa-2x"></a>
+          <a href="#" class="fa fa-twitter fa-2x"></a>
+          <a href="#" class="fa fa-google fa-2x"></a>
+          <a href="#" class="fa fa-linkedin fa-2x"></a>
+          <a href="#" class="fa fa-youtube fa-2x"></a>
+          <a href="#" class="fa fa-instagram fa-2x"></a>
+          <p style="color: yellow;">
+            Copyright - All rights are reserved
+            <br>
+            <br>
+          </p>
+        </footer>
+    </body>
+</html>
