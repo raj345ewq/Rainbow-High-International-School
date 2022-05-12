@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <title>Food On Desk-Book Lunch</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 15px;
+			background-image: url('ivbg.png'); background-size: 100%;
+        }
+
+        input[type=text],
+        input[type=date],
+        select {
+            width: 10cm;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        input[type=email] {
+            width: 10cm;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        input[type=submit],#myButton {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            font-size: 15px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        #myButton:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+           
+        }
+		
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="reservation.php" method="POST" name="myform">
+
+
+            <label for="date">Date of Consumption</label><br>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="class">Standard</label><br>
+            <select id="class" name="class" required>
+                <option disabled selected>Select Class</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+
+            <label for="food">Food Item</label><br>
+            <select id="food" name="food" required>
+                <option disabled selected>Select Food</option>
+                <option value="Frooti">Frooti</option>
+                <option value="Lassi">Lassi</option>
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Chicken Burger">Chicken Burger</option>
+                <option value="Veg Burger">Veg Burger</option>
+                <option value="Aloo Tikka Burger">Aloo Tikka Burger</option>
+                <option value="Corn Cheese Sandwich">Corn Cheese Sandwich</option>
+                <option value="Cheese Sandwich">Cheese Sandwich</option>
+                <option value="Veg Sandwich">Veg Sandwich</option>
+            </select><br>
+
+            
+            <label for="name">Enter Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+
+            <label for="email">Enter Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br><br>
+
+            
+
+            <input type="submit" value="Order Now" style="float: left;">
+            <button id="myButton" style="float: right;">Cancel</button>
+        </form>
+    </div>
+   
+    
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "https://rhis.netlify.app/";
+        };
+    </script>
+	
+
+</body>
+
+</html>
